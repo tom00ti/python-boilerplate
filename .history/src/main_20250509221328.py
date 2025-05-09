@@ -9,7 +9,7 @@ class ChatApp:
     def respond(self, message, chat_history):
         bot_message = random.choice(self.acknowledgements)
         chat_history.append((message, bot_message))
-        return bot_message, chat_history
+        return "", chat_history
 
     def create_ui(self):
         with gr.Blocks() as demo:
